@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.scss" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <section class="game-over win">
-      <div>
-        <h1>Dang it! You won!</h1>
-        <img src="./imgs/game.gif" alt="Animation" />
-        <button>play again!</button>
-      </div>
-    </section>
-    <section class="game-over lose">
-      <div>
-        <h1>Haha! I won!</h1>
-        <img src="./imgs/game.gif" alt="Animation" />
-        <button>try again?</button>
-      </div>
-    </section>
-    <main>
-      <section class="title">
-        <h1>Rock, Paper, Scissors</h1>
-        <p class="rule">First to score 5 points wins.</p>
-        <p class="pick">Pick your fighter:</p>
-      </section>
-      <section class="game user">
-        <h2>You</h2>
-        <div class="choices">
-          <div class="choice-box rock" data-button="rock">
-            <img src="./imgs/rock.png" alt="Rock" />
-            <p class="choice-title">Rock</p>
-          </div>
-          <div class="choice-box paper" data-button="paper">
-            <img src="./imgs/paper.png" alt="Paper" />
-            <p class="choice-title">Paper</p>
-          </div>
-          <div class="choice-box scissors" data-button="scissors">
-            <img src="./imgs/scs.png" alt="Scissors" />
-            <p class="choice-title">Scissors</p>
-          </div>
-        </div>
-      </section>
-      <section class="game pc">
-        <h2>PC</h2>
-        <div class="choices">
-          <div class="choice-box rock">
-            <img src="./imgs/rock.png" alt="Rock" />
-            <p class="choice-title">Rock</p>
-          </div>
-          <div class="choice-box paper">
-            <img src="./imgs/paper.png" alt="Paper" />
-            <p class="choice-title">Paper</p>
-          </div>
-          <div class="choice-box scissors">
-            <img src="./imgs/scs.png" alt="Scissors" />
-            <p class="choice-title">Scissors</p>
-          </div>
-        </div>
-      </section>
-      <section class="score-box">
-        <div class="score">
-          <p class="score-title"><i class="fa-solid fa-user"></i>You</p>
-          <p class="user-score">0</p>
-        </div>
-        <div class="score">
-          <p class="score-title"><i class="fa-solid fa-robot"></i>PC</p>
-          <p class="computer-score">0</p>
-        </div>
-        <div class="outcome"><h2 class="result">Who will win?</h2></div>
-      </section>
-    </main>
-    <script src="animation.js" type="module"></script>
-    <script src="game.js" type="module"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pebble Paper Scissors</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="style.scss" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <section class="game-over win">
+            <div>
+                <h1>Dang it! You won!</h1>
+                <img src="./imgs/game.gif" alt="Animation" />
+                <button>play again!</button>
+            </div>
+        </section>
+        <section class="game-over lose">
+            <div>
+                <h1>Haha! I won!</h1>
+                <img src="./imgs/game.gif" alt="Animation" />
+                <button>try again?</button>
+            </div>
+        </section>
+        <main>
+            <section class="title">
+                <h1>Pebble, Paper, Scissors</h1>
+                <p class="rule">First to score 5 points wins.</p>
+                <p class="pick">Pick your fighter:</p>
+            </section>
+            <section class="game user">
+                <h2>You</h2>
+                <div class="choices">
+                    <div class="choice-box pebble" data-button="pebble">
+                        <img src="./imgs/pebble.png" alt="Pebble" />
+                        <p class="choice-title">Pebble</p>
+                    </div>
+                    <div class="choice-box paper" data-button="paper">
+                        <img src="./imgs/paper.png" alt="Paper" />
+                        <p class="choice-title">Paper</p>
+                    </div>
+                    <div class="choice-box scissors" data-button="scissors">
+                        <img src="./imgs/scs.png" alt="Scissors" />
+                        <p class="choice-title">Scissors</p>
+                    </div>
+                </div>
+            </section>
+            <section class="game pc">
+                <h2>PC</h2>
+                <div class="choices">
+                    <div class="choice-box pebble">
+                        <img src="./imgs/pebble.png" alt="Pebble" />
+                        <p class="choice-title">Pebble</p>
+                    </div>
+                    <div class="choice-box paper">
+                        <img src="./imgs/paper.png" alt="Paper" />
+                        <p class="choice-title">Paper</p>
+                    </div>
+                    <div class="choice-box scissors">
+                        <img src="./imgs/scs.png" alt="Scissors" />
+                        <p class="choice-title">Scissors</p>
+                    </div>
+                </div>
+            </section>
+            <section class="score-box">
+                <div class="score">
+                    <p class="score-title">
+                        <i class="fa-solid fa-user"></i>You
+                    </p>
+                    <p class="user-score">0</p>
+                </div>
+                <div class="score">
+                    <p class="score-title">
+                        <i class="fa-solid fa-robot"></i>PC
+                    </p>
+                    <p class="computer-score">0</p>
+                </div>
+                <div class="outcome"><h2 class="result">Who will win?</h2></div>
+            </section>
+        </main>
+        <script src="animation.js" type="module"></script>
+        <script src="game.js" type="module"></script>
+    </body>
 </html>
